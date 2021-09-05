@@ -2,17 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+//All routes using the main layout (no middleware, only a Navbar)
+Route::layout('layouts.main')->group(function(){
 
-Route::get('/', function () {
-    return view('welcome');
+    Route::get('/', App\Kompo\Home\HomeView::class)->name('home');
+
 });
+
+//All routes using the dashboard layout ('auth' middleware, Navbar + Sidebar)
+Route::layout('layouts.dashboard')->middleware(['auth'])->group(function(){
+
+    Route::get('dashboard', App\Kompo\Dashboard\DashboardView::class)->name('dashboard');
+
+});
+
+//Kompo Modules Routes
+include __DIR__.'/kompo/basic-auth.php';
