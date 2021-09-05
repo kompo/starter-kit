@@ -1,0 +1,8 @@
+@import  'vue-kompo/sass/bootstrap-style';
+
+//Tailwind comes after and is able to override kompo defaults!
+@import  "tailwindcss/base";
+//...
+@import  "tailwindcss/components";
+//...
+@import  "tailwindcss/utilities";
