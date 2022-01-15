@@ -26,7 +26,7 @@ class RegisterForm extends Form
         return redirect()->route('dashboard');
     }
 
-	public function komponents()
+	public function render()
 	{
 		return [
 			_Input('Name')

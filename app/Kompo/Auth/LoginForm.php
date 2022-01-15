@@ -12,7 +12,7 @@ class LoginForm extends Form
     public $containerClass = 'container min-h-screen flex flex-col sm:justify-center items-center';
     public $class = 'sm:mx-auto sm:w-full sm:max-w-md';
 
-	public function komponents()
+	public function render()
 	{
 		return [
             session('status') ? //See ResetPasswordForm: to confirm the password has been reset...

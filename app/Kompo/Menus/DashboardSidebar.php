@@ -15,7 +15,7 @@ class DashboardSidebar extends Menu
 	public $order = 1;
 	public $class = 'bg-gradient-to-b from-gray-900 to-gray-700 text-gray-100 w-full sm:w-60 overflow-y-auto';
 
-	public function komponents()
+	public function render()
 	{
 		return [
 			$this->section(

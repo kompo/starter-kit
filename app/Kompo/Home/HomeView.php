@@ -8,7 +8,7 @@ class HomeView extends View
 {
 	public $class = 'max-w-4xl mx-auto text-gray-700';
 
-	public function komponents()
+	public function render()
 	{
 		return [
 			_Html('Welcome to Kompo!')->class('font-black text-2xl my-8'),

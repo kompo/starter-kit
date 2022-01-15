@@ -15,7 +15,7 @@ class Navbar extends Menu
 	public $fixed = true;
 	public $class = 'px-4 bg-white border-b border-gray-200';
 
-	public function komponents()
+	public function render()
 	{
 		return [
 			_SidebarToggler(), //Only displays on smaller screens

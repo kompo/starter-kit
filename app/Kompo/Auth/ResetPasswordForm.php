@@ -57,7 +57,7 @@ class ResetPasswordForm extends Form
         ]);
     }
 
-	public function komponents()
+	public function render()
 	{
 		return [
 			_Hidden('token')->value($this->token),

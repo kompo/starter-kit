@@ -1,11 +1,10 @@
-@import  'vue-kompo/sass/bootstrap-style';
+@import "tailwindcss/base";
 
-//Tailwind comes after and is able to override kompo defaults!
-@import  "tailwindcss/base";
-//...
-@import  "tailwindcss/components";
-//...
-@import  "tailwindcss/utilities";
+@import "tailwindcss/components";
+
+@import 'vue-kompo/sass/bootstrap-style'; //Kompo's SCSS should come here
+
+@import "tailwindcss/utilities"; //Utilities comes after to be able to override kompo defaults!
 
 body{
 	@apply bg-gray-50;

@@ -23,7 +23,7 @@ class ForgotPasswordForm extends Form
     }
 
 
-    public function komponents()
+    public function render()
     {
         return [
             _Panel()->id('reset-password-response'),
