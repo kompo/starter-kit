@@ -15,8 +15,8 @@ class HomeView extends View
 			_Rows(
 				$this->homeCard('Documentation', 'document-text', 'Read the complete docs on kompo.io. We\'ve put in a LOT of effort writing it to make it as easy to understand as possible.')
 					->href('https://kompo.io/docs'),
-				$this->homeCard('Elements API', 'view-list', 'Browse the full list of usable Elements and their available methods. They come in different base styles too!')
-					->href('https://kompo.io/elements-api'),
+				$this->homeCard('Online demo', 'view-list', 'Browse the full list of usable Elements and their available methods. They come in different base styles too!')
+					->href('https://demo.kompo.io'),
 				$this->homeCard('Ready to pull modules', 'download', 'Search for prebuilt ready-to-pull modules in Kompo\'s online library. This is the biggest time saver of all!')
 					->href('https://kompo.io/examples'),
 				$this->homeCard('Sponsor', 'heart', 'Kompo\'s adventure has just begun. Please consider sponsoring so we can allocate more resources on the project.')
